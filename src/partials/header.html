@@ -1,13 +1,48 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container header_container">
+    <a href="" class="logo">Yes</a>
+    <nav class="navigation_header">
+      <ul class="nav_list">
+        <li>
+          <button data-modal-open type="button" class="nav_button">
+            Inspiration
+          </button>
+        </li>
+        <li><a href="" class="nav_link">Fotografi</a></li>
+        <li><a href="" class="nav_link">Beklædning</a></li>
+        <li><a href="" class="nav_link">Lokation</a></li>
+        <li><a href="" class="nav_link">Opsætnings</a></li>
+        <li><a href="" class="nav_link">Gæster</a></li>
+        <li><a href="" class="nav_link">Værktøjer</a></li>
+      </ul>
+    </nav>
+    <img
+      src="./img/img_header.png"
+      alt="woman"
+      width="52"
+      height="52"
+      class="header_img"
+    />
+    <strong class="header_name">Hej Anne</strong>
+    <a href="" class="header_link">
+      <svg class="header_icon" width="21" height="23">
+        <use href="./img/icons.svg#icon-Group-6"></use>
+      </svg>
+    </a>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close type="button" class="modal-close">
+        <svg width="14" height="14">
+          <use href="./img/icons.svg#icon-Group-176"></use>
+        </svg>
+      </button>
+      <ul class="modal-list">
+        <li>Stil</li>
+        <li>Moodboard</li>
+        <li>Fotografi</li>
+        <li>Video</li>
+      </ul>
+    </div>
+  </div>
 </header>

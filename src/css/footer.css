@@ -1,0 +1,92 @@
+.footer {
+    padding: 19px 0;
+    background: #2f2f2f;
+}
+
+.mob_soc_list {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+    
+}
+.mob_soc_icon {
+   fill: #fff;
+stroke-width: 1px;
+stroke: #fff;
+}
+.footer_nav_wrap {
+    display: none;
+}
+.footer_soc_wrap {
+    display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .mob_soc_list {
+    display: none;
+  }
+  .footer_nav_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding-bottom: 53px;
+    border-width: 1000px;
+    border-bottom: 1px solid #FFFFFF;
+
+}
+.footer_soc_wrap {
+    display: block;
+
+    padding-top: 55px;
+}
+.footer {
+    padding-top: 46px;
+    padding-bottom: 10px;
+}
+
+
+
+.footer_nav_list {
+    display: flex;
+    gap: 81px;
+}
+.footer_nav_link {
+
+font-size: 14px;
+
+
+line-height: 1.40625;
+color: #fff;
+}
+.footer_logo {
+    font-family: "Homemade Apple", sans-serif;
+font-size: 18px;
+text-align: center;
+color: #fff;
+}
+.footer_soc_list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.footer_soc_icon {
+    fill: #fff;
+}
+.footer_title {
+ 
+font-size: 14px;
+
+
+line-height: 1.40625;
+text-align: center;
+color: #fff;
+}
+
+.footer_text_wrap{
+    display: flex;
+    gap: 11px;
+    justify-content: center;
+}
+}

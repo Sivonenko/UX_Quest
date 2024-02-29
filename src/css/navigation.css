@@ -1,0 +1,33 @@
+.nav {
+    padding-top: 52px;
+    padding-bottom: 103px;
+}
+
+.navigation_list {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+   align-items: center;
+}
+.navigation_link {
+font-family: "Besley", sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: #000;
+border: 1px solid #000;
+border-radius: 31px;
+width: 275px;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 2px 4px 0 #fff;
+background: #f8f8f8;
+}
+
+@media only screen and (min-width: 1280px) {
+.nav {
+    display: none;
+    
+  }
+}

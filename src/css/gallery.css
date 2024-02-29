@@ -1,0 +1,51 @@
+.gallery {
+    display: none;
+}
+@media only screen and (min-width: 1280px) {
+   .gallery {
+    display: block;
+    padding-top: 42px;
+    padding-bottom: 94px;
+}
+.gallery_container{
+    padding: 0 15px;
+}
+
+.gallery_title {
+    margin-bottom: 24px;
+font-size: 20px;
+color: #090909;
+text-align: center;
+}
+.gallery_form {
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+    margin-bottom: 36px;
+}
+.gallery_btn {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   padding: 0;
+   line-height: 0;
+}
+.gallery_icon {
+}
+.gallery_input {
+    border: 1px solid #1a1a1a;
+border-radius: 14px;
+width: 343px;
+height: 35px;
+}
+.gallery_subtitle {
+font-size: 24px;
+color: #000;
+margin-bottom: 30px;
+}
+.gallery_list {
+    display: flex;
+    gap: 52px;
+}
+
+}

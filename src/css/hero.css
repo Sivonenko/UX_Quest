@@ -1,0 +1,98 @@
+.hero {
+    background-image: url(../img/hero-bg-mob.png);
+    padding: 28px 7px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+   border-radius: 14px;
+}
+
+.hero_list {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 13px;
+
+}
+.hero_item {
+border: 1px solid #000;
+border-radius: 10px;
+width: 78px;
+padding: 4px 0;
+box-shadow: 0 4px 4px 0 rgba(6, 0, 72, 0.25);
+}
+.hero_nom {
+    font-size: 14px;
+color: #000;
+display: block;
+text-align: center;
+margin-bottom: 8px;
+}
+.hero_text {
+    font-size: 14px;
+color: #000;
+text-align: center;
+}
+.hero_desk {
+font-weight: 700;
+font-size: 15px;
+color: #2b2b2b;
+text-align: center;
+margin-bottom: 6px;
+
+}
+.hero_img {
+    margin-bottom: 16px;
+}
+.hero_description {
+    font-family: "Besley", sans-serif;
+font-size: 14px;
+color: #171717;
+text-align: center;
+}
+.hero-desk {
+  display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+background-image: url(../img/hero_bg_desk.png);
+padding-top: 24px;
+padding-bottom: 26px;
+margin-top: 26px;
+}
+
+.hero_list {
+    gap: 14px;
+    justify-content: center;
+    margin-bottom: 25px;
+
+}
+.hero_item {
+border-radius: 10px;
+width: 114px;
+padding-top: 18px;
+padding-bottom: 26px;
+}
+.hero_nom {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.hero_text {
+    font-size: 20px;
+}
+.hero_desk {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.hero_img {
+    display: none;
+}
+.hero_description {
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+.hero-desk {
+    display: block;
+    margin: 0 auto;
+}
+}
