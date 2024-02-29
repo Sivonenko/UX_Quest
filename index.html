@@ -4,80 +4,235 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/UX_Quest/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>UX_Quest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Besley&family=Homemade+Apple&family=Paprika&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
     <script type="module" crossorigin src="/UX_Quest/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/UX_Quest/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/UX_Quest/assets/index-1c5a9289.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/UX_Quest/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+  <div class="container header_container">
+    <a href="" class="logo">Yes</a>
+    <nav class="navigation_header">
+      <ul class="nav_list">
+        <li>
+          <button data-modal-open type="button" class="nav_button">
+            Inspiration
+          </button>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
+        <li><a href="" class="nav_link">Fotografi</a></li>
+        <li><a href="" class="nav_link">Beklædning</a></li>
+        <li><a href="" class="nav_link">Lokation</a></li>
+        <li><a href="" class="nav_link">Opsætnings</a></li>
+        <li><a href="" class="nav_link">Gæster</a></li>
+        <li><a href="" class="nav_link">Værktøjer</a></li>
+      </ul>
+    </nav>
+    <img
+      src="/UX_Quest/assets/img_header-98fbbca6.png"
+      alt="woman"
+      width="52"
+      height="52"
+      class="header_img"
+    />
+    <strong class="header_name">Hej Anne</strong>
+    <a href="" class="header_link">
+      <svg class="header_icon" width="21" height="23">
+        <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-Group-6"></use>
+      </svg>
+    </a>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close type="button" class="modal-close">
+        <svg width="14" height="14">
+          <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-Group-176"></use>
+        </svg>
+      </button>
+      <ul class="modal-list">
+        <li>Stil</li>
+        <li>Moodboard</li>
+        <li>Fotografi</li>
+        <li>Video</li>
       </ul>
     </div>
+  </div>
+</header>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/UX_Quest/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    <main>
+      <section class="hero">
+  <div class="container">
+    <ul class="hero_list">
+      <li class="hero_item">
+        <span class="hero_nom">27</span>
+        <p class="hero_text">Weeks</p>
+      </li>
+      <li class="hero_item">
+        <span class="hero_nom">0</span>
+        <p class="hero_text">Days</p>
+      </li>
+      <li class="hero_item">
+        <span class="hero_nom">0</span>
+        <p class="hero_text">Hours</p>
+      </li>
+      <li class="hero_item">
+        <span class="hero_nom">0</span>
+        <p class="hero_text">Minutes</p>
+      </li>
+    </ul>
+    <p class="hero_desk">2/15</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAAAGCAYAAABJsbKwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACjSURBVHgB7dexDsFAAMbx79BFE7GYlAcwdzGIdGFhlSYGJk/gVSQWYbd0NJuMJnNxphqORCIkV9K36N33e4h/8hflsLEGEVHOiVQ/Phqb7/Z2FG7opTDEwO9j6PdARPZRrycWuxWuiQxKMMy4OwIR2anqVjBbzicFEBEZ4nyX2ZIataKdVhvNmgciss8lkdifDrFGMfiHrT4FEZEBnLcTqShWPwV9LPUKyZvcAAAAAElFTkSuQmCC" width="310" alt="" class="hero_img" />
+    <p class="hero_description">Din progression</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcgAAAALCAYAAAD7qh1EAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFZSURBVHgB7duxS0JRFMfx88xCErSGlihyiAaLphaHaoygoTAjqL8h0FEIiqC1+g9cAisCt2izGmqUCJeWl6lLEVfrieDwejdw7rlevx94PO4Z73B/93C4Vnh7whUAAPqZ65bEkjMnX8t1SxYB6U92MyPZZFoAAOZ5KD/K8fWJ/hcH2z8bqqDUwNBc5EDwL71587FZmRmfFgCAWabGJmV3OSWVz2qsVH8NdV6+b+kge7AYT8jN/qUAAMzUcJoS30tI66s+GhD4prvIRqspAAAzRcMRWVtYkU4ovE5A9kg5BCQA9AMCskcj3u0CAGAubw4pllh2UODbzlJKosMEJACYqvLxLvflJ7uVrxbpIH3SwaifegAAzKTDcfVoy+se5VCv6SB90EPbbDLzt3n6AwCYQ5/rz29lOb+7EuU00s5FLafr+plHUQAA6FOuN28MiGsH28FTVbBVt/4LZCBuUzX94EcAAAAASUVORK5CYII=" width="455" alt="" class="hero-desk" />
   </div>
 </section>
+
+      <section class="nav">
+  <div class="container">
+    <ul class="navigation_list">
+      <li><a href="" class="navigation_link">Budget</a></li>
+      <li><a href="" class="navigation_link">Invitationer</a></li>
+      <li><a href="" class="navigation_link">Gæsteliste</a></li>
+      <li><a href="" class="navigation_link">Kalender</a></li>
+      <li><a href="" class="navigation_link">Ønskeliste</a></li>
+    </ul>
+  </div>
+</section>
+
+      <section class="gallery">
+  <div class="container gallery_container">
+    <h2 class="gallery_title">Find inspiration</h2>
+    <form class="gallery_form">
+      <button class="gallery_btn">
+        <svg class="gallery_icon" width="32" height="32">
+          <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-searh"></use>
+        </svg>
+      </button>
+      <input type="text" class="gallery_input" />
+    </form>
+    <h3 class="gallery_subtitle">Fotografi & videografi</h3>
+    <ul class="gallery_list">
+      <li><img src="/UX_Quest/assets/img_1-3ffdf171.jpg" alt="wedding" width="164" /></li>
+      <li><img src="/UX_Quest/assets/img_2-d4ba5d50.jpg" alt="wedding" width="164" /></li>
+      <li><img src="/UX_Quest/assets/img_3-a41a7882.jpg" alt="wedding" width="164" /></li>
+      <li><img src="/UX_Quest/assets/img_4-0ca360b1.jpg" alt="wedding" width="164" /></li>
+      <li><img src="/UX_Quest/assets/img_5-7f0080d5.jpg" alt="wedding" width="164" /></li>
+      <li><img src="/UX_Quest/assets/img_6-4f75fab6.jpg" alt="wedding" width="164" /></li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <ul class="mob_soc_list">
+      <li>
+        <a href="">
+          <svg class="mob_soc_icon" width="32" height="32">
+            <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-heard"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <svg class="mob_soc_icon" width="32" height="32">
+            <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-planer"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <svg class="mob_soc_icon" width="29" height="32">
+            <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-home"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <svg class="mob_soc_icon" width="32" height="32">
+            <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-searh"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <svg class="mob_soc_icon" width="32" height="32">
+            <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-account"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer_nav_wrap">
+      <ul class="footer_nav_list">
+        <li><a href="" class="footer_nav_link">Home</a></li>
+        <li><a href="" class="footer_nav_link">Inspiration</a></li>
+      </ul>
+      <a href="" class="footer_logo">Yes</a>
+
+      <ul class="footer_nav_list">
+        <li><a href="" class="footer_nav_link">Fotografi</a></li>
+        <li><a href="" class="footer_nav_link">Lokation</a></li>
+      </ul>
+    </div>
+    <div class="footer_soc_wrap">
+      <ul class="footer_soc_list">
+        <li>
+          <a href="">
+            <svg class="footer_soc_icon" width="38" height="38">
+              <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="footer_soc_icon" width="38" height="38">
+              <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="footer_soc_icon" width="38" height="38">
+              <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="footer_soc_icon" width="38" height="38">
+              <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg class="footer_soc_icon" width="38" height="38">
+              <use href="/UX_Quest/assets/icons-b688f36f.svg#icon-pinterest"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="footer_text_wrap">
+        <p class="footer_title">© 2010 — 2023</p>
+        <p class="footer_title">Privacy — Terms</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
     
